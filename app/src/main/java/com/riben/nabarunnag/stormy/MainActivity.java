@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
         double longitude = -122.423;
         String forecastUrl = "https://api.forecast.io/forecast/"+apiKey+"/"+latitude +","+longitude+"";
 
-
+        //This method makes the application crash
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(forecastUrl)
